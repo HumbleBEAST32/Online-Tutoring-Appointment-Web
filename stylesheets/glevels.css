@@ -1,0 +1,79 @@
+/* glevelsmain.css */
+
+/* Reset & universal styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Main layout */
+main {
+    padding-top: 60px; /* Space below navbar */
+    padding-bottom: 60px; /* Space above footer */
+    flex: 1;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background-image: url("../images/Math\ bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Container for all grade level sections */
+.bordered-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between boxes */
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* Main headers */
+.main-headers {
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: orange;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 auto 30px;
+    line-height: 1.4;
+    width: 500px;
+    text-align: center;
+}
+
+/* Grade headers */
+.grade-headers {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Content boxes */
+.boxes {
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    text-align: justify;
+    background-color: orange;
+}
+
+/* List indentation */
+.li {
+    margin-left: 20px;
+    margin-right: 20px;
+}

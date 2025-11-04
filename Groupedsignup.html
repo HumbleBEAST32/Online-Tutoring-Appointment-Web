@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ready and Committed Online Math Tutorials</title>
+  <link rel="stylesheet" href="stylesheets/signup.css" />
+  <link rel="stylesheet" href="stylesheets/navbar.css" />
+  <link rel="stylesheet" href="stylesheets/footer.css" />
+</head>
+<body>
+
+<header>
+  <!-- Below top bar: logo + typing left, main nav right -->
+  <div id="mainHeader">
+    <div class="logo-title">
+      <img src="images/RC math tutorials logo.png" alt="logo" class="offlogo" />
+      <div class="typing-container">
+        <span class="typing-text">Ready and Committed Online Math Tutorials</span>
+      </div>
+    </div>
+
+    <nav id="mainNav">
+      <ul id="navLinks">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li class="dropdown login-register">
+          <a href="#">Educational Stages</a>
+          <ul class="dropdown-menu">
+            <li><a href="Elem.html">Elementary</a></li>
+            <li><a href="HS.html">Junior High School</a></li>
+          </ul>
+        </li>
+        <li class="login-register"><a href="Login.html">Login</a></li>
+        <li class="login-register"><a href="Signupclass.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- PROCEDURE AND REQUIREMENTS FIRST -->
+  <section class="bordered-container">
+    <section class="boxes">
+      <p class="grade-headers"><strong>Procedure:</strong></p>
+      <p>
+        1. Click/tap Registration. <br>
+        2. Choose your current Grade Level. <br>
+        3. Once you get to the specified registration tab of your choice, fill up the form and click/tap Register. <br>
+        4. Verify your email address. <br>
+        5. Once you are done verifying your email, click/tap the Login at the upper right corner. <br>
+        6. Proceed by logging in your account by clicking/tapping Login. <br>
+        7. Once done logging in, your dashboard will appear. <br>
+      </p>
+    </section><br>
+
+    <section class="boxes">
+      <p class="grade-headers"><strong>Requirements:</strong></p>
+      <ul>
+        <li>Must be on the specified grade levels</li>
+        <li>The worktext/workbook that you are using must have a copy that the tutor can purchase online/in physical stores for smoother guidance while in the tutorial session.</li>
+        <li>A device (e.g., PC, Smartphone, Tablet) that can run Google Meet.</li>
+        <li>A webcam/front camera for the tutor to see if you are paying attention.</li>
+        <li>A software/application (e.g., Paint, Canva Tools) that will let you write and show your answers to your tutor while in the tutorial session.</li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="bordered-container">
+    <h1 class="main-headers"><strong>SIGN UP</strong></h1>
+    <h2 class="secondary-headers"><strong>(Grouped Session)</strong></h2>
+
+    <section class="boxes">
+      <form id="signupForm" action="#" method="post">
+        <!-- Member 1 -->
+        <section class="form-group">
+          <label for="member1-fullname">Member 1 Full Name:</label>
+          <input type="text" id="member1-fullname" name="member1-fullname" placeholder="Last Name/First Name/Middle Name" required>
+        </section>
+
+        <section class="form-group">
+          <label for="member1-email">Member 1 Email:</label>
+          <input type="email" id="member1-email" name="member1-email" placeholder="Enter email" required>
+        </section>
+
+        <!-- Member 2 -->
+        <section class="form-group">
+          <label for="member2-fullname">Member 2 Full Name:</label>
+          <input type="text" id="member2-fullname" name="member2-fullname" placeholder="Last Name/First Name/Middle Name" required>
+        </section>
+
+        <section class="form-group">
+          <label for="member2-email">Member 2 Email:</label>
+          <input type="email" id="member2-email" name="member2-email" placeholder="Enter email" required>
+        </section>
+
+        <!-- Member 3 -->
+        <section class="form-group">
+          <label for="member3-fullname">Member 3 Full Name:</label>
+          <input type="text" id="member3-fullname" name="member3-fullname" placeholder="Last Name/First Name/Middle Name" required>
+        </section>
+
+        <section class="form-group">
+          <label for="member3-email">Member 3 Email:</label>
+          <input type="email" id="member3-email" name="member3-email" placeholder="Enter email" required>
+        </section>
+
+        <!-- Education info -->
+        <section class="form-group">
+          <label for="educationStage">Educational Stage:</label>
+          <select id="educationStage" name="educationStage" required>
+            <option value="">Select Stage</option>
+            <option value="elementary">Elementary</option>
+            <option value="highschool">High School</option>
+          </select>
+        </section>
+
+        <section class="form-group">
+          <label for="gradeLevel">Enter Grade Level:</label>
+          <select id="gradeLevel" name="gradeLevel" required>
+            <option value="">Select Grade Level</option>
+            <!-- dynamically filled -->
+          </select>
+        </section>
+
+        <!-- Days -->
+        <section class="form-group">
+          <label>Select Applicable Days:</label>
+          <div class="days-container">
+            <label><input type="checkbox" name="days" value="Monday"> Monday</label>
+            <label><input type="checkbox" name="days" value="Tuesday"> Tuesday</label>
+            <label><input type="checkbox" name="days" value="Wednesday"> Wednesday</label>
+            <label><input type="checkbox" name="days" value="Thursday"> Thursday</label>
+            <label><input type="checkbox" name="days" value="Friday"> Friday</label>
+            <label><input type="checkbox" name="days" value="Saturday"> Saturday</label>
+          </div>
+        </section>
+
+        <!-- Time -->
+        <section class="form-group form-group-time">
+          <label>Select Time Frame:</label>
+          <div class="time-selects">
+            <select name="startTime" required>
+              <option value="">Start Time</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="4:30 PM">4:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="5:30 PM">5:30 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="6:30 PM">6:30 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+            </select>
+            <span>to</span>
+            <select name="endTime" required>
+              <option value="">End Time</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="4:30 PM">4:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="5:30 PM">5:30 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="6:30 PM">6:30 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="7:30 PM">7:30 PM</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Submit button (opens Privacy Policy) -->
+        <section class="form-group">
+          <button type="button" id="signUpBtn">Sign Up</button>
+        </section>
+
+        <p class="login-text">
+          Already have an account? <a href="Login.html">Login</a>
+        </p>
+      </form>
+    </section>
+  </section>
+</main>
+
+<!-- Privacy Policy Dialog -->
+<dialog id="privacyDialog">
+  <h2>Privacy Policy:</h2>
+  <div class="dialog-content">
+    <p>
+      We value your privacy. This Privacy Policy explains how we collect, use,
+      and protect your information. By signing up, you agree to this policy.<br><br>
+      • We do not sell your data.<br>
+      • We may collect usage statistics to improve our services.<br>
+      • You can contact us anytime for more details.<br><br>
+      (Insert full Privacy Policy text here...)
+    </p>
+  </div>
+  <div class="dialog-actions">
+    <button class="close-btn" id="closeDialog">Cancel</button>
+    <button class="agree-btn" id="agreeDialog">I Agree</button>
+  </div>
+</dialog>
+
+<!-- Verify Account Dialog -->
+<dialog id="verifyDialog">
+  <h2>Verify Account</h2>
+  <p>We've sent a verification link to your email address.</p>
+  <div class="dialog-actions">
+    <button id="closeVerify">OK</button>
+  </div>
+</dialog>
+
+<footer>
+  <div class="contents">
+    <div class="sub">
+      <div class="section">
+        <h1>Educational Stages</h1>
+        <a href="Elem.html"><p>Elementary</p></a>
+        <a href="HS.html"><p>Junior High School</p></a>
+      </div>
+
+      <div class="section">
+        <h1>Contact:</h1>
+        <p>
+          <b>Ready and Committed Online Math Tutorials</b><br>
+          Address: 20211 MRB Complex Pilot Drive, Barangay Commonwealth, Quezon City <br>
+          Contact: (02)8921-6510 | +639916125147
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Ready and Committed Online Math Tutorials - All Rights Reserved</p>
+      <p>Developed by Cardenas, Zaki Bjorn R.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script/glevels.js" defer></script>
+<script src="script/privacy.js" defer></script>
+</body>
+</html>

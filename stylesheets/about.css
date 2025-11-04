@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  background-color: #fff;
+}
+
+main {
+    padding-top: 60px; /* Space below navbar */
+    padding-bottom: 60px; /* Space above footer */
+    flex: 1;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background-image: url("../images/Math\ bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Two bordered boxes container */
+.bordered-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #fff;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+
+.left-header {
+  font-size: 30px; /* Adjust as needed */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.right-p {
+  margin-top: 120px;
+  font-size: 30px; /* Adjust as needed */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Left box */
+.left-box {
+  border: 2px solid navy;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  text-align: justify;
+  background-color: orange;
+}
+
+/* Right box */
+.right-box {
+  border: 2px solid navy;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  text-align: justify;
+  background-color: orange;
+}
+
+.bordered-box p {
+  margin: 0;
+}
+
+/* Section styles (if used) */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.C {
+  text-align: right;
+}

@@ -1,0 +1,54 @@
+.upload-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.upload-form label {
+font-weight: bold;
+margin-bottom: 10px;
+color: white;
+}
+
+.upload-form input[type="file"] {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid navy;
+border-radius: 8px;
+padding: 8px;
+cursor: pointer;
+background-color: white;
+}
+
+/* Style for the Choose File button itself */
+.upload-form input[type="file"]::-webkit-file-upload-button {
+background-color: navy;
+color: white;
+border: none;
+border-radius: 4px;
+padding: 8px 15px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.upload-form input[type="file"]::-webkit-file-upload-button:hover {
+background-color: #001f5c;
+}
+
+.upload-form button {
+margin-top: 15px;
+padding: 10px 25px;
+background-color: navy;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.upload-form button:hover {
+background-color: #001f5c;
+}

@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Main layout */
+main {
+    padding-top: 60px; /* Space below navbar */
+    padding-bottom: 60px; /* Space above footer */
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center horizontally */
+    background-image: url("../images/Math\ bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    gap: 40px; /* Space between Procedure/Requirements and Sign Up sections */
+}
+
+/* Bordered box container */
+.bordered-container {
+    color: #fff;
+    background-color: orange;
+    border: 3px solid navy;
+    border-radius: 8px;
+    padding: 50px; /* more inside padding */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading inside box */
+.main-headers {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px; /* bigger gap below heading */
+}
+
+.secondary-headers{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Box for form elements */
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* remove gap, spacing controlled by .form-group */
+}
+
+/* Form groups spacing */
+.form-group {
+    position: relative; 
+    margin-bottom: 20px; /* wider vertical gap between each group */
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+}
+
+/* Inputs & selects */
+input,
+select {
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0; /* Remove browser default spacing */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-8%); 
+    cursor: pointer;
+    font-size: 18px;
+    color: navy;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+
+/* Tighter label-input spacing for normal fields */
+.form-group:not(.form-group-days) label {
+    margin-bottom: 3px; /* reduced from 6px for tighter look */
+}
+
+/* Birthday selects spacing */
+#birthMonth,
+#birthDay {
+    width: auto;
+    margin-right: 10px;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
+#birthYear {
+    width: auto;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
+/* Submit button */
+button {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;       /* allow horizontal centering */
+    margin: 0 auto;       /* center horizontally */
+}
+
+button:hover {
+    background-color: #001f5c;
+}
+
+/* Login text */
+.login-text {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Days checkbox container */
+.days-container {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.days-container label {
+    display: grid;
+    grid-template-columns: 24px auto;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 10px; /* space between each checkbox row */
+}
+
+.days-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: navy;
+}
+
+/* Time frame label + selects */
+.form-group-time {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group-time label {
+    margin-bottom: 3px; /* match other label spacing */
+}
+
+.time-selects {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-selects select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.time-selects span {
+    font-size: 16px;
+}
+
+/* Your last existing CSS rule above */
+
+/* Reduce space between button and login text */
+.form-group:last-of-type {
+    margin-bottom: 0; /* no gap under button group */
+}
+
+.login-text {
+    margin-top: 15px; /* small consistent gap */
+    text-align: center;
+}
+
+.show-password-container {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between text and checkbox */
+}
+
+.show-password-container input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.1);
+}
+
+/* Dialog box styling */
+dialog {
+  position: fixed; /* make it independent of page flow */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center horizontally & vertically */
+  
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 90%;
+  max-height: 70vh;
+  overflow: hidden;
+  background-color: #ffa500; /* Orange */
+  color: white; /* White text */
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+.dialog-content {
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.close-btn, .agree-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+dialog h2 {
+  margin-bottom: 15px; /* space below the heading */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+dialog p {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+
+.close-btn {
+  font-family: Arial;
+  background: navy;
+  color: #ffffff;
+}
+
+.close-btn:hover {
+  background: #001f5c;
+}
+
+.agree-btn {
+  font-family: Arial;
+  background: navy;
+  color: #ffffff;
+}
+
+.agree-btn:hover {
+  background: #001f5c;
+}
+

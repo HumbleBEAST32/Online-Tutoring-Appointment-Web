@@ -1,0 +1,104 @@
+/* Header overall style */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #ffa500;
+  border-bottom: 3px solid navy;
+}
+
+/* Main header container */
+#mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 0;
+}
+
+/* Logo and typing text container */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.offlogo {
+  height: 80px;
+  background-color: orange;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+/* Typing effect styles */
+.typing-container {
+  font-family: Impact;
+  font-size: 30px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 4s steps(30, end), blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Main nav styles */
+#mainNav ul {
+  list-style: none;
+  margin: 0;
+  gap: 5px;
+  padding: 0;
+  display: flex;
+}
+
+#mainNav li {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+#mainNav li a {
+  color: white;
+  background-color: orange; /* All navbar items are orange */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+#mainNav li a:hover {
+  background-color: navy;
+}
+
+/* Dropdown menu */
+#mainNav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -90px;
+  background-color: orange;
+  min-width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+#mainNav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#mainNav .dropdown-menu li a {
+  background-color: orange;
+}
+
+#mainNav .dropdown-menu li a:hover {
+  background-color: navy;
+}

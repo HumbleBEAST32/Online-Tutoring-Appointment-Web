@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Main layout */
+main {
+    padding-top: 60px; /* Space below navbar */
+    padding-bottom: 60px; /* Space above footer */
+    flex: 1;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background-image: url("../images/Math\ bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Bordered box container */
+.bordered-container {
+    color: #fff;
+    background-color: orange;
+    border: 3px solid navy;
+    border-radius: 8px;
+    padding: 50px; /* more inside padding */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading inside box */
+.main-headers {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px; /* bigger gap below heading */
+}
+
+/* Box for form elements */
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* remove gap, spacing controlled by .form-group */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 40px; /* bigger space between buttons */
+    margin-bottom: 50px;
+    align-items: center; /* center horizontally */
+}
+
+.form-group a {
+    text-decoration: none; /* remove underline */
+    width: 100%; /* button fills available width */
+}
+
+button {
+    padding: 15px 25px; /* bigger padding for a larger button */
+    font-size: 20px; /* bigger text */
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* make button fill container width */
+    max-width: 300px; /* optional limit */
+}
+
+button:hover {
+    background-color: #001f5c;
+}

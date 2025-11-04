@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ready and Committed Online Math Tutorials</title>
+  <link rel="stylesheet" href="stylesheets/login.css" />
+  <link rel="stylesheet" href="stylesheets/navbar.css" />
+  <link rel="stylesheet" href="stylesheets/footer.css" />
+  <script src="script/togglepassword.js"></script>
+</head>
+<body>
+
+<header>
+  <!-- Below top bar: logo + typing left, main nav right -->
+  <div id="mainHeader">
+    <div class="logo-title">
+      <img src="images/RC math tutorials logo.png" alt="logo" class="offlogo" />
+      <div class="typing-container">
+        <span class="typing-text">Ready and Committed Online Math Tutorials</span>
+      </div>
+    </div>
+
+    <nav id="mainNav">
+      <ul id="navLinks">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li class="dropdown login-register">
+          <a href="#">Educational Stages</a>
+          <ul class="dropdown-menu">
+            <li><a href="Elem.html">Elementary</a></li>
+            <li><a href="HS.html">Junior High School</a></li>
+          </ul>
+        </li>
+        <li class="login-register"><a href="Login.html">Login</a></li>
+        <li class="login-register"><a href="Signupclass.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="bordered-container">
+    <h1 class="main-headers"><strong>LOGIN</strong></h1>
+    <section class="boxes">
+        <form action="#" method="post">
+            
+            <section class="form-group">
+                <label for="username">Enter Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </section>
+
+            <section class="form-group">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="button" class="toggle-password" data-target="password">👁️‍🗨️</button>
+            </section>
+
+              <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+            </section>
+
+            <section class="form-group">
+                <button type="button"><a href=""></a>Login</button>
+            </section>
+
+            <p class="login-text">
+                Don't have an account? <a href="Signupclass.html">Sign Up</a>
+            </p>
+        </form>
+    </section>
+</section>
+
+
+</main>
+
+
+
+<footer>
+  <div class="contents">
+    <div class="sub">
+      <div class="section">
+        <h1>Educational Stages</h1>
+        <a href="Elem.html"><p>Elementary</p></a>
+        <a href="HS.html"><p>Junior High School</p></a>
+      </div>
+      
+      <div class="section">
+        <h1>Contact:</h1>
+        <p>
+          <b>Ready and Committed Online Math Tutorials</b><br>
+          Address: 20211 MRB Complex Pilot Drive, Barangay Commonwealth, Quezon City <br>
+          Contact: (02)8921-6510 | +639916125147
+        </p>
+      </div>
+    </div>
+     
+    <div class="copyright">
+      <p>&copy; 2025 Ready and Committed Online Math Tutorials - All Rights Reserved</p>
+      <p>Developed by Cardenas, Zaki Bjorn R.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
